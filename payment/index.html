@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment — My Store</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0E7C5A">
+<link rel="icon" href="/assets/images/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body data-page="payment">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo" data-site-name>My Store</a>
+    <div class="header-actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">🌓</button>
+    </div>
+  </div>
+</header>
+
+<main class="container section" style="max-width:560px;">
+  <h1 style="margin-bottom:8px;">Payment</h1>
+  <p class="text-soft" style="margin-bottom:18px;">Total to pay (including delivery): <strong data-payment-subtotal>৳0</strong> + delivery charge</p>
+
+  <form data-payment-form novalidate>
+    <div class="form-card">
+      <h3>Choose a payment method</h3>
+      <div data-payment-methods></div>
+      <p class="form-hint" data-payment-instruction></p>
+    </div>
+
+    <div class="form-card">
+      <h3>Payment details</h3>
+      <div class="form-group">
+        <label class="form-label" for="transaction_id">Transaction ID *</label>
+        <input class="form-input" id="transaction_id" name="transaction_id" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="sender_number">Sender number *</label>
+        <input class="form-input" id="sender_number" name="sender_number" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="pay-screenshot">Payment screenshot (optional)</label>
+        <input type="file" id="pay-screenshot" accept="image/*">
+      </div>
+    </div>
+
+    <button class="btn btn-primary btn-block" type="submit">Place order</button>
+  </form>
+</main>
+
+<script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>
