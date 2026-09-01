@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reset password — My Store</title>
+<meta name="description" content="Reset your My Store account password.">
+<link rel="canonical" href="https://your-domain.com/forget/">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0E7C5A">
+<link rel="icon" href="/assets/images/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body data-page="forget">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo" data-site-name>My Store</a>
+    <div class="header-actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">🌓</button>
+    </div>
+  </div>
+</header>
+
+<main class="auth-page">
+  <div class="auth-card">
+    <h1>Reset your password</h1>
+    <p class="text-soft" style="margin-bottom:24px;">We'll email you a code to reset it.</p>
+
+    <form data-forget-request-form novalidate>
+      <div class="form-group">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" type="email" id="email" name="email" required autocomplete="email">
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Send reset code</button>
+    </form>
+
+    <form data-forget-reset-form novalidate hidden>
+      <div class="form-group">
+        <label class="form-label" for="code">Verification code</label>
+        <input class="form-input otp-input" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" id="code" name="code" required autocomplete="one-time-code">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="newPassword">New password</label>
+        <input class="form-input" type="password" id="newPassword" name="newPassword" required minlength="8" autocomplete="new-password">
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Reset password</button>
+    </form>
+
+    <p class="auth-switch">Remembered it after all? <a href="/login/">Log in</a></p>
+  </div>
+</main>
+
+<script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>
