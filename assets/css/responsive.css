@@ -1,0 +1,57 @@
+/* ==============================================================
+   RESPONSIVE.CSS — tablet (768px+) and desktop (1024px+) overrides.
+   style.css is the mobile-first base; everything here only adds or
+   changes rules at larger widths, it never repeats base styles.
+   ============================================================== */
+
+/* ---------- tablet: 768px and up --------------------------------- */
+@media (min-width: 768px) {
+  .container { padding-inline: 24px; }
+
+  .search-form { display: block; max-width: 380px; }
+  .mobile-menu .search-form { display: none; }
+
+  .menu-toggle { display: none; }
+  .desktop-nav { display: flex; align-items: center; gap: 4px; }
+  .mobile-menu { display: none !important; }
+
+  .bottom-nav { display: none; }
+  .site-footer { padding-bottom: 32px; }
+
+  .category-list { grid-template-columns: repeat(4, 1fr); }
+  .product-grid { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .product-detail-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+  .product-gallery-main { margin-bottom: 12px; }
+}
+
+/* ---------- desktop: 1024px and up ------------------------------- */
+@media (min-width: 1024px) {
+  :root { --header-h: 72px; }
+
+  .header-inner { gap: 32px; }
+  .logo { font-size: 1.45rem; }
+
+  .category-list { grid-template-columns: repeat(6, 1fr); }
+  .product-grid { grid-template-columns: repeat(4, 1fr); gap: 22px; }
+
+  .footer-grid { grid-template-columns: repeat(4, 1fr); }
+
+  .section { padding: 48px 0; }
+
+  .product-detail-layout { grid-template-columns: 480px 1fr; gap: 56px; }
+  .product-gallery-main { max-width: 480px; }
+
+  .auth-card { padding: 40px 36px; }
+}
+
+/* ---------- desktop nav links (hidden on mobile via base) --------- */
+.desktop-nav {
+  display: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.desktop-nav a { padding: 8px 12px; border-radius: var(--radius-full); }
+.desktop-nav a:hover { background: var(--c-bg); color: var(--c-primary); }
