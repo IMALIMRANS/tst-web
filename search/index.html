@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search — My Store</title>
+<meta name="description" content="Search products at My Store.">
+<link rel="canonical" href="https://your-domain.com/search/">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0E7C5A">
+<link rel="icon" href="/assets/images/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body data-page="search">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo" data-site-name>My Store</a>
+    <nav class="desktop-nav" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/category/">Categories</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <form class="search-form" data-search-form>
+      <input type="search" name="q" placeholder="Search products..." aria-label="Search products">
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+    <div class="header-actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">🌓</button>
+      <a href="/cart/" class="icon-btn" aria-label="Cart">🛒<span class="cart-badge" data-cart-count>0</span></a>
+      <a href="/login/" class="icon-btn" data-guest-only aria-label="Login">👤</a>
+      <a href="/profile/" class="icon-btn" data-auth-only hidden aria-label="Profile">👤</a>
+      <button class="icon-btn" data-logout data-auth-only hidden aria-label="Logout">🚪</button>
+      <button class="menu-toggle" data-menu-toggle aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" data-mobile-menu>
+    <form class="search-form" data-search-form>
+      <input type="search" name="q" placeholder="Search products..." aria-label="Search products">
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+    <nav class="mobile-menu-links" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/category/">Categories</a>
+      <a href="/cart/">Cart</a>
+      <a href="/orders/" data-auth-only hidden>My Orders</a>
+      <a href="/profile/" data-auth-only hidden>Profile</a>
+      <a href="/login/" data-guest-only>Login</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <h1 data-search-heading style="margin-bottom:18px;">Search</h1>
+  <input
+    class="form-input search-page-input"
+    type="search"
+    data-search-input
+    placeholder="Search by product, category, or keyword..."
+    aria-label="Search products">
+  <div class="product-grid" data-search-results></div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="/">Home</a>
+        <a href="/category/">Categories</a>
+        <a href="/search/">Search</a>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <a href="/login/">Login</a>
+        <a href="/signup/">Sign up</a>
+        <a href="/orders/">My orders</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about/">About us</a>
+        <a href="/contact/">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <p data-site-tagline>Fast delivery, easy returns.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 <span data-site-name>My Store</span>. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="bottom-nav" aria-label="Primary">
+  <a href="/"><span class="icon">🏠</span>Home</a>
+  <a href="/category/"><span class="icon">📂</span>Categories</a>
+  <a href="/search/" class="is-active"><span class="icon">🔍</span>Search</a>
+  <a href="/cart/"><span class="icon">🛒</span>Cart</a>
+  <a href="/profile/"><span class="icon">👤</span>Profile</a>
+</nav>
+
+<script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>
