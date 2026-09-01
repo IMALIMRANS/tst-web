@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Write a review — My Store</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0E7C5A">
+<link rel="icon" href="/assets/images/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body data-page="review">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo" data-site-name>My Store</a>
+    <div class="header-actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">🌓</button>
+    </div>
+  </div>
+</header>
+
+<main class="container section" style="max-width:560px;">
+  <h1 style="margin-bottom:8px;">Write a review</h1>
+  <p class="text-soft" style="margin-bottom:18px;">Pick a product from a completed order.</p>
+
+  <div data-reviewable-list></div>
+
+  <section data-review-form-section hidden class="form-card" style="margin-top:20px;">
+    <h3>Reviewing: <span data-review-product-name></span></h3>
+    <form data-review-form novalidate>
+      <div class="star-rating-input">
+        <input type="radio" name="rating" id="star5" value="5"><label for="star5">★</label>
+        <input type="radio" name="rating" id="star4" value="4"><label for="star4">★</label>
+        <input type="radio" name="rating" id="star3" value="3"><label for="star3">★</label>
+        <input type="radio" name="rating" id="star2" value="2"><label for="star2">★</label>
+        <input type="radio" name="rating" id="star1" value="1"><label for="star1">★</label>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="comment">Comment</label>
+        <textarea class="form-input" id="comment" name="comment" rows="4"></textarea>
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Submit review</button>
+    </form>
+  </section>
+</main>
+
+<script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>
