@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — My Store</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0E7C5A">
+<link rel="icon" href="/assets/images/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body data-page="checkout">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo" data-site-name>My Store</a>
+    <div class="header-actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">🌓</button>
+    </div>
+  </div>
+</header>
+
+<main class="container section" style="max-width:560px;">
+  <h1 style="margin-bottom:18px;">Checkout</h1>
+
+  <div class="form-card">
+    <h3>Order summary</h3>
+    <div data-checkout-summary></div>
+    <div class="checkout-line" style="font-weight:800; border-top:1px solid var(--c-border); margin-top:8px; padding-top:10px;">
+      <span>Subtotal</span><span data-checkout-subtotal>৳0</span>
+    </div>
+    <p class="text-soft text-sm">Delivery charge is added on the payment step.</p>
+  </div>
+
+  <div class="form-card">
+    <h3>Delivery address</h3>
+    <div data-address-list></div>
+    <button type="button" class="btn btn-outline btn-sm" data-add-address-toggle>+ Add a new address</button>
+
+    <form data-new-address-form hidden style="margin-top:16px;">
+      <div class="form-group">
+        <label class="form-label">Label (optional)</label>
+        <input class="form-input" name="label" placeholder="Home, Office...">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Recipient name *</label>
+        <input class="form-input" name="recipient_name" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Phone *</label>
+        <input class="form-input" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Address *</label>
+        <input class="form-input" name="address_line" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Area</label><input class="form-input" name="area"></div>
+        <div class="form-group"><label class="form-label">City</label><input class="form-input" name="city"></div>
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Save address</button>
+    </form>
+  </div>
+
+  <button class="btn btn-primary btn-block" data-continue-to-payment>Continue to payment</button>
+</main>
+
+<script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>
