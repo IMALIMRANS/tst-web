@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Store — Shop fast, pay your way</title>
+<meta name="description" content="Browse electronics, fashion, home goods, and more. Fast delivery across Bangladesh, pay by bKash, Nagad, or cash on delivery.">
+<link rel="canonical" href="https://your-domain.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="My Store — Shop fast, pay your way">
+<meta property="og:description" content="Browse electronics, fashion, home goods, and more. Fast delivery, pay your way.">
+<meta property="og:url" content="https://your-domain.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0E7C5A">
+<link rel="icon" href="/assets/images/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "My Store",
+  "url": "https://your-domain.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://your-domain.com/search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+</head>
+<body data-page="home">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo" data-site-name>My Store</a>
+    <nav class="desktop-nav" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/category/">Categories</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <form class="search-form" data-search-form>
+      <input type="search" name="q" placeholder="Search products..." aria-label="Search products">
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+    <div class="header-actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">🌓</button>
+      <a href="/cart/" class="icon-btn" aria-label="Cart">🛒<span class="cart-badge" data-cart-count>0</span></a>
+      <a href="/login/" class="icon-btn" data-guest-only aria-label="Login">👤</a>
+      <a href="/profile/" class="icon-btn" data-auth-only hidden aria-label="Profile">👤</a>
+      <button class="icon-btn" data-logout data-auth-only hidden aria-label="Logout">🚪</button>
+      <button class="menu-toggle" data-menu-toggle aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" data-mobile-menu>
+    <form class="search-form" data-search-form>
+      <input type="search" name="q" placeholder="Search products..." aria-label="Search products">
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+    <nav class="mobile-menu-links" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/category/">Categories</a>
+      <a href="/cart/">Cart</a>
+      <a href="/orders/" data-auth-only hidden>My Orders</a>
+      <a href="/profile/" data-auth-only hidden>Profile</a>
+      <a href="/login/" data-guest-only>Login</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section container" style="padding-bottom: 8px;">
+    <h1 class="font-display">Everything you need,<br>delivered fast.</h1>
+    <p class="text-soft" data-site-tagline style="margin-top:8px; max-width:52ch;">Fast delivery, easy returns, pay your way.</p>
+  </section>
+
+  <section class="section container">
+    <div class="section-header">
+      <h2>Shop by category</h2>
+      <a href="/category/">See all</a>
+    </div>
+    <div class="category-list" data-category-list></div>
+  </section>
+
+  <section class="section container">
+    <div class="section-header">
+      <h2>Popular right now</h2>
+      <a href="/category/">See all</a>
+    </div>
+    <div class="product-grid" data-popular-products></div>
+  </section>
+
+  <section class="section container">
+    <div class="section-header">
+      <h2>Latest collection</h2>
+      <a href="/category/">See all</a>
+    </div>
+    <div class="product-grid" data-latest-products></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="/">Home</a>
+        <a href="/category/">Categories</a>
+        <a href="/search/">Search</a>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <a href="/login/">Login</a>
+        <a href="/signup/">Sign up</a>
+        <a href="/orders/">My orders</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about/">About us</a>
+        <a href="/contact/">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <p data-site-tagline>Fast delivery, easy returns.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 <span data-site-name>My Store</span>. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="bottom-nav" aria-label="Primary">
+  <a href="/" class="is-active"><span class="icon">🏠</span>Home</a>
+  <a href="/category/"><span class="icon">📂</span>Categories</a>
+  <a href="/search/"><span class="icon">🔍</span>Search</a>
+  <a href="/cart/"><span class="icon">🛒</span>Cart</a>
+  <a href="/profile/"><span class="icon">👤</span>Profile</a>
+</nav>
+
+<script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>
