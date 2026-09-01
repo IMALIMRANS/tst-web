@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /login/
+Disallow: /signup/
+Disallow: /forget/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /payment/
+Disallow: /orders/
+Disallow: /tracking/
+Disallow: /profile/
+Disallow: /search/
+
+Sitemap: https://your-domain.com/sitemap.xml
