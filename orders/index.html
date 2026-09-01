@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Orders — My Store</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0E7C5A">
+<link rel="icon" href="/assets/images/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body data-page="orders">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo" data-site-name>My Store</a>
+    <nav class="desktop-nav" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/category/">Categories</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">🌓</button>
+      <a href="/cart/" class="icon-btn" aria-label="Cart">🛒<span class="cart-badge" data-cart-count>0</span></a>
+      <a href="/profile/" class="icon-btn" aria-label="Profile">👤</a>
+      <button class="menu-toggle" data-menu-toggle aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" data-mobile-menu>
+    <nav class="mobile-menu-links" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/category/">Categories</a>
+      <a href="/cart/">Cart</a>
+      <a href="/profile/">Profile</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <h1 style="margin-bottom:18px;">My orders</h1>
+  <div data-orders-list></div>
+</main>
+
+<nav class="bottom-nav" aria-label="Primary">
+  <a href="/"><span class="icon">🏠</span>Home</a>
+  <a href="/category/"><span class="icon">📂</span>Categories</a>
+  <a href="/search/"><span class="icon">🔍</span>Search</a>
+  <a href="/cart/"><span class="icon">🛒</span>Cart</a>
+  <a href="/profile/" class="is-active"><span class="icon">👤</span>Profile</a>
+</nav>
+
+<script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>
