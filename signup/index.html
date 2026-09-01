@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign up — My Store</title>
+<meta name="description" content="Create your My Store account.">
+<link rel="canonical" href="https://your-domain.com/signup/">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0E7C5A">
+<link rel="icon" href="/assets/images/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body data-page="signup">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo" data-site-name>My Store</a>
+    <div class="header-actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">🌓</button>
+    </div>
+  </div>
+</header>
+
+<main class="auth-page">
+  <div class="auth-card">
+    <h1>Create your account</h1>
+    <p class="text-soft" style="margin-bottom:24px;">Just a couple of details to get started.</p>
+
+    <form data-signup-form novalidate>
+      <div class="form-group">
+        <label class="form-label" for="name">Full name</label>
+        <input class="form-input" type="text" id="name" name="name" required autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="username">Username</label>
+        <input class="form-input" type="text" id="username" name="username" required autocomplete="username">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" type="email" id="email" name="email" required autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="phone">Phone number</label>
+        <input class="form-input" type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX" required autocomplete="tel">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <input class="form-input" type="password" id="password" name="password" required minlength="8" autocomplete="new-password">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="confirmPassword">Confirm</label>
+          <input class="form-input" type="password" id="confirmPassword" name="confirmPassword" required minlength="8" autocomplete="new-password">
+        </div>
+      </div>
+      <p class="form-hint" style="margin-bottom:16px;">At least 8 characters.</p>
+      <button class="btn btn-primary btn-block" type="submit">Create account</button>
+    </form>
+
+    <form data-otp-form novalidate hidden>
+      <p class="text-soft" style="margin-bottom:16px;">Enter the 6-digit code we emailed you.</p>
+      <div class="form-group">
+        <label class="form-label" for="code">Verification code</label>
+        <input class="form-input otp-input" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" id="code" name="code" required autocomplete="one-time-code">
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Verify & continue</button>
+    </form>
+
+    <p class="auth-switch">Already have an account? <a href="/login/">Log in</a></p>
+  </div>
+</main>
+
+<script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>
