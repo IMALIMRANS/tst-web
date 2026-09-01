@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — My Store</title>
+<meta name="description" content="Log in to your My Store account.">
+<link rel="canonical" href="https://your-domain.com/login/">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0E7C5A">
+<link rel="icon" href="/assets/images/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body data-page="login">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo" data-site-name>My Store</a>
+    <div class="header-actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">🌓</button>
+    </div>
+  </div>
+</header>
+
+<main class="auth-page">
+  <div class="auth-card">
+    <h1>Welcome back</h1>
+    <p class="text-soft" style="margin-bottom:24px;">Log in to check out, track orders, and leave reviews.</p>
+
+    <form data-login-form novalidate>
+      <div class="form-group">
+        <label class="form-label" for="identifier">Email or phone number</label>
+        <input class="form-input" type="text" id="identifier" name="identifier" required autocomplete="username">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="password">Password</label>
+        <input class="form-input" type="password" id="password" name="password" required autocomplete="current-password">
+      </div>
+      <p style="text-align:right; margin-bottom:16px;">
+        <a href="/forget/" class="text-sm" style="color:var(--c-primary); font-weight:700;">Forgot password?</a>
+      </p>
+      <button class="btn btn-primary btn-block" type="submit">Log in</button>
+    </form>
+
+    <div class="form-divider">or</div>
+    <button class="btn btn-ghost btn-block" data-google-login type="button">Continue with Google</button>
+
+    <p class="auth-switch">Don't have an account? <a href="/signup/">Sign up</a></p>
+  </div>
+</main>
+
+<script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>
